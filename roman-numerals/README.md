@@ -10,6 +10,10 @@ This repository contains the following folders and files.  They can be used to s
 
 ## Specs
 
+The program should reject numbers greater than 3,999 and less than 1.
+* Input = 4000
+* Output = "Enter another number."
+
 The program should convert [1,5,10,50,100,500,1000] to [I,V,X,L,C,D,M]
 * Input = 10
 * Output = X<br>
