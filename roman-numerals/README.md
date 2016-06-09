@@ -26,6 +26,6 @@ More than three adjacent symbols should not be added
 * Input = 9
 * Output = IX<br>
 
-Ones, tens, hundreds, and thousands should be separated
+There should never be more than one each of V, L, or D in the output.
 * Input = 99
 * Output = XCIX<br>
