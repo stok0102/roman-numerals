@@ -4,6 +4,10 @@ var rnVals = [1000,500,100,50,10,5,1];
 
 var toRoman = function(n) {
   var outputString = "";
+  var numeralSubtraction = function(i) {
+    var subtractString = rnChars[i] + rnChars[i-1];
+    return subtractString;
+  }
   // debugger;
   for (var i = 0; i < rnChars.length; i++) {
     var charsToAdd = "";
@@ -11,13 +15,10 @@ var toRoman = function(n) {
       n -= rnVals[i];
       charsToAdd += rnChars[i];
     }
-    outputString += charsToAdd;
+    if (charsToAdd.length < 4 ) outputString += charsToAdd;
+    else outputString += numeralSubtraction(i);
   }
 
-  var numeralSubraction = function(subtractString, i) {
-    subtractString = "rnChars[i]" + "rnChars[i-1]";
-    return subtractString;
-  }
 
 
   return outputString;
